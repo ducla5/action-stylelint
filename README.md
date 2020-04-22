@@ -1,13 +1,8 @@
 # GitHub Action: Run stylelint with reviewdog
 
-[![Docker Image CI](https://github.com/reviewdog/action-stylelint/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/reviewdog/action-stylelint/actions)
-[![depup](https://github.com/reviewdog/action-stylelint/workflows/depup/badge.svg)](https://github.com/reviewdog/action-stylelint/actions?query=workflow%3Adepup)
-[![release](https://github.com/reviewdog/action-stylelint/workflows/release/badge.svg)](https://github.com/reviewdog/action-stylelint/actions?query=workflow%3Arelease)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/reviewdog/action-stylelint?logo=github&sort=semver)](https://github.com/reviewdog/action-stylelint/releases)
-[![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
-This action runs [stylelint](https://github.com/stylelint/stylelint) with
-[reviewdog](https://github.com/reviewdog/reviewdog) on pull requests to improve
+This action runs [stylelint](https://github.com/stylelint/stylelint) with custom
+[reviewdog](https://github.com/ducla5/reviewdog) on pull requests to improve
 code review experience.
 
 [![github-pr-check sample](https://user-images.githubusercontent.com/3797062/65406379-54848e00-de1a-11e9-8464-1037e1cacf80.png)](https://github.com/reviewdog/action-stylelint/pull/1)
@@ -23,6 +18,11 @@ code review experience.
 
 Optional. Report level for reviewdog [info,warning,error].
 It's same as `-level` flag of reviewdog.
+
+### `directory`
+
+Optional. The subdirectory where your Go code resides.
+
 
 ### `reporter`
 
